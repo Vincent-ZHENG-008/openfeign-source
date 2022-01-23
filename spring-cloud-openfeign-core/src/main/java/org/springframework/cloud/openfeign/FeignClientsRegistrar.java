@@ -149,7 +149,7 @@ class FeignClientsRegistrar implements ImportBeanDefinitionRegistrar, ResourceLo
 	public void registerBeanDefinitions(AnnotationMetadata metadata, BeanDefinitionRegistry registry) {
 		/* 注册全局默认的 FeignClient 配置组件 */
 		registerDefaultConfiguration(metadata, registry);
-		/* 注册 @FeignClient 保准接口 */
+		/* 注册 @FeignClient 标准接口 */
 		registerFeignClients(metadata, registry);
 	}
 
